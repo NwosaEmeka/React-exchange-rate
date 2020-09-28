@@ -51,7 +51,7 @@ function Exchange({ data, base, updateBase }){
           />
           <div className="exchange__result">
             <p className="small-text">{amount}{" "}{base} = </p>
-            <p className="big-text">{amount * data.conversion_rates[to]} <span className="small-text"> {to}</span> </p>
+            <p className="big-text">{(amount * data.conversion_rates[to]).toFixed(3)} <span className="small-text"> {to}</span> </p>
           </div>
 
           <p className="date">Last Update: {data.time_last_update_utc}</p>
