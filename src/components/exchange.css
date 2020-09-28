@@ -1,0 +1,69 @@
+.header{
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 0 3em rgba(0,0,0,0.2);
+}
+.logo{
+  max-width: 69rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.logo img{
+  height: 2.5rem;
+  max-width: 10.6rem;
+  object-fit: contain;
+}
+.exchange__content{
+  max-width: 69rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.header__text{
+  margin: 2.2rem 0;
+}
+.exchange__wrapper{
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  background: #29486C;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+  margin-bottom: 2rem;
+}
+.exchange__result{
+  text-align: center;
+}
+.small-text{
+  font-size: 1.5rem
+}
+.big-text{
+  font-size: 3rem
+}
+.date{
+  text-align: right;
+  font-size: 0.8rem;
+}
+.main__para{
+  text-align: center;
+  font-weight: 700;
+}
+.disclaimer{
+  color: #c0c0c0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 37rem){
+  .exchange__wrapper{
+    padding:2rem 1rem;
+  }
+  .header__text{
+  font-size: 1.5rem;
+}
+}

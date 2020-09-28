@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.exchange__form{
+  display: flex;
+  max-width: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.form__input{
+  display: flex;
+  align-items: flex-end;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: none;
+}
+
+input[type=number],
+select{
+  width: 15rem;
+}
+
+.form__element label{
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.swap__btn{
+  background-color: transparent;
+}
+.exchange__btn{
+  background-color: orange;
+  transition:all 0.5s ease;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -ms-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+}
+
+input[type=number],
+select,
+.swap__btn,
+.exchange__btn{
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  outline:none;
+  border: none;
+  border-radius:0.5rem;
+  -webkit-border-radius:0.5rem;
+  -moz-border-radius:0.5rem;
+  -ms-border-radius:0.5rem;
+  -o-border-radius:0.5rem;
+}
+input[type=number]:focus,
+.exchange__btn:focus,
+select:focus{
+  box-shadow: 0px 0px 0px 2px orangered inset;
+}
+
+.exchange__btn:hover{
+background-color: dodgerblue;
+color: white;
+}
+
+@media (max-width: 56rem){
+  input[type=number],
+  select{
+    width: 9rem;
+  }
+}
+@media (max-width: 37rem){
+  .exchange__form{
+    display: block;
+  }
+  .form__input{
+    margin-top: 1rem;
+  }
+  select{
+    width: 11.5rem;
+  }
+  input[type=number]{
+    width: 100%;
+  }
+  input[type=number],
+  select,
+  .swap__btn,
+  .exchange__btn{
+    margin-right: 0rem
+}
+}
+@media (max-width: 30rem){
+  select{
+    width: 9rem;
+  }
+}
+@media (max-width: 25rem){
+  select{
+    width: 7rem;
+  }
+}
